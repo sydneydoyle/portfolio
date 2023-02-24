@@ -1,4 +1,4 @@
-<html>
+
 <header>
   <div class="nav-bar">
   <a class="nav-button" href"https://www.linkedin.com/in/sydneydoyle/">about</a>
@@ -46,49 +46,3 @@ school
 </div>
   </div>
 </body>
-</html>
-
-<style>
-html, body {
-  height: 100%;
-}
-body {
-  background: #FFF;
-  display: table;
-  font-family: "monoface", sans-serif;
-  margin: 0 2em;
-}
-.highlight a {
-  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #73D672 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
-  color: #222;
-  font-size: 1.75em;
-  line-height: 1.15em;
-  text-decoration: none;
-  transition: background-position 0.5s ease-out;
-}
-.highlight a:hover {
-  background-position: -99.99% 0;
-}
-</style>
-
-<script>
-/*! Fades out the whole page when clicking links */
-$('a').click(function(e) {
-e.preventDefault();
-newLocation = this.href;
-$('body').fadeOut('slow', newpage);
-});
-function newpage() {
-window.location = newLocation;
-}
-
-$(document).ready(function(){
-
-/*! Fades in whole page on load */
-$('body').css('display', 'none');
-$('body').fadeIn(500);
-
-}); 
-</script>
