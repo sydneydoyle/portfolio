@@ -1,0 +1,94 @@
+<html>
+<header>
+  <div class="nav-bar">
+  <a class="nav-button" href"https://www.linkedin.com/in/sydneydoyle/">about</a>
+  <a class="nav-button" href"#">work</a>
+  <a class="nav-button" href"#">resume</a>
+  <a class="nav-button" href"#">contact</a>
+</div>
+</header>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<div class="content-wrapper">
+<div class="typewriter">
+  <h1>Hi, I'm Sydney.</h1>
+</div>
+<div class="ShiftUp">
+  <ul>
+  <li><span class="material-symbols-outlined">
+edit
+</span> UX Writer</li>
+  </ul>
+</div>
+
+
+<div class="ShiftUp2">
+  <ul>
+   <li><span class="material-symbols-outlined">
+school
+</span>
+ Learning Experience Designer</li>
+  </ul>
+  </div>
+
+<div class="fade-in-text1">
+  <p>I make <span style="background-color: #EFD27A"><strong>complex</strong></span> things <strong><span style="background-color: #EFD27A">accessible</strong></span>.</p>
+</div>
+  
+<div class="fade-in-text2">
+  <a class="see-more-link" href="https://www.linkedin.com/in/sydneydoyle/">Let's pen ideas together <span class="material-symbols-outlined">arrow_right_alt</span></a>
+</div>
+
+<div class="img-wrapper">
+  <img class="self" src="https://i.ibb.co/PZsmG0X/DrawnMe.png">
+  
+</div>
+  </div>
+</body>
+</html>
+
+<style>
+html, body {
+  height: 100%;
+}
+body {
+  background: #FFF;
+  display: table;
+  font-family: "monoface", sans-serif;
+  margin: 0 2em;
+}
+.highlight a {
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #73D672 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  color: #222;
+  font-size: 1.75em;
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+}
+.highlight a:hover {
+  background-position: -99.99% 0;
+}
+</style>
+
+<script>
+/*! Fades out the whole page when clicking links */
+$('a').click(function(e) {
+e.preventDefault();
+newLocation = this.href;
+$('body').fadeOut('slow', newpage);
+});
+function newpage() {
+window.location = newLocation;
+}
+
+$(document).ready(function(){
+
+/*! Fades in whole page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(500);
+
+}); 
+</script>
