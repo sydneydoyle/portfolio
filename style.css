@@ -10,7 +10,7 @@
 
 .nav-button {
   font-family: monospace;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #c96842;
   padding: 10px;
   text-decoration: none;
@@ -54,7 +54,7 @@
 .title .typewriter {
   color: #000;
   font-family: monospace;
-  font-size: 1.8rem;
+  font-size: 2rem;
   overflow: hidden;
   white-space: nowrap;
   display: flex;
@@ -95,7 +95,7 @@
   color: #000;
   position: absolute;
   white-space: unset;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   animation: 3s anim-ShiftUp;
 }
 @keyframes anim-ShiftUp {
@@ -129,7 +129,7 @@
   position: absolute;
   white-space: unset;
   margin-top: 3em;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   animation: 4s anim-ShiftUp2;
 }
 @keyframes anim-ShiftUp2 {
@@ -162,7 +162,7 @@
   color: #000;
   position: absolute;
   white-space: unset;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin-top: 5.5em;
   animation: fadeIn 2s;
 }
@@ -187,7 +187,7 @@
   color: #544131;
   position: absolute;
   white-space: unset;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: 11em;
   animation: fadeIn 3.5s;
 }
