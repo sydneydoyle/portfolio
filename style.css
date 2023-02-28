@@ -1,90 +1,100 @@
-/* GLOBAL STYLES */ 
-.body {
-  max-height: 500px;
-}
 .nav-bar {
-width: 90%;
-display: flex;
-flex-wrap: wrap;
-margin: 25px auto;
-justify-content: right;
-margin-bottom: 70px;  
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  justify-content: right;
 }
 
 .nav-button {
   font-family: monospace;
-  font-size: 1em;
-  color: #C96842;
+  font-size: 1.5em;
+  color: #c96842;
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
 }
 
 .nav-button:hover {
-  color: #788B55;
+  color: #788b55;
 }
 
-.content-wrapper{
- max-width: 48em;
- justify-content: flex-start;
- align-content: center;
- flex-wrap: wrap;
- display: flex;
- padding-right: 24px;
- padding-bottom: 24px;
- position: relative;
- width: 50%;
- margin: auto;
- min-width: 48em;
-}
 
-.img-wrapper {
-bottom: auto;
-top: auto;
-right: 50px;
-position: absolute;
-}
+.container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      img {
+        max-width: 100%;
+        width: 30vw;
+        min-height: 300px;
+        min-width: 300px;
+      }
 
-.self {
-  height: 20em;
-  width: 20em;
+@media only screen and (max-width:840px) {
+  img {
+         display: none;
+  }
 }
-
+      .image {
+        flex-basis: 20%;
+        position: relative;
+        top: 6em;
+      }
+      .title {
+     font-family: monospace;
+     padding: 40px;
+     margin: 5px 10px;
+      }
 
 /* Typewriter Text */
-.typewriter h1 {
+.title .typewriter {
   color: #000;
   font-family: monospace;
-  font-size: 3em;
+  font-size: 1.8rem;
   overflow: hidden;
-  border-right: .15em solid #1D6F41;
   white-space: nowrap;
-  display: ;
-  letter-spacing: .15em;
-  animation: 
-    typing 2.0s steps(30, end),
-    blink-caret .5s step-end infinite;
+  display: flex;
+  border-right: 0.1em solid #1d6f41;
+  animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@media only screen and (max-width:546px) {
+  .title .typewriter {
+         font-size: 1.2rem;
+  }
 }
 
 /* Typing Text Effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* Typewriter Cursor */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #788B55 }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #788b55;
+  }
 }
 
 /* Shift Up 1 Text */
-.ShiftUp {
+.title .ShiftUp {
   font-family: monospace;
   color: #000;
   position: absolute;
-  margin-top: 50px;
-  font-size: 1.4em;
+  white-space: unset;
+  font-size: 1.5rem;
   animation: 3s anim-ShiftUp;
 }
 @keyframes anim-ShiftUp {
@@ -105,13 +115,20 @@ position: absolute;
   }
 }
 
+@media only screen and (max-width: 405px) {
+  .title .ShiftUp {
+         font-size: 1.3rem;
+  }
+}
+
 /* Shift Up 2 Text */
-.ShiftUp2 {
+.title .ShiftUp2 {
   font-family: monospace;
   color: #000;
   position: absolute;
-  margin-top: 100px;
-  font-size: 1.4em;
+  white-space: unset;
+  margin-top: 3em;
+  font-size: 1.5rem;
   animation: 4s anim-ShiftUp2;
 }
 @keyframes anim-ShiftUp2 {
@@ -132,59 +149,94 @@ position: absolute;
   }
 }
 
+@media only screen and (max-width: 405px) {
+  .title .ShiftUp2 {
+         font-size: 1.3rem;
+  }
+}
+
 /* Fade Text */
-.fade-in-text1 {
+.title .fade-in-text1 {
   font-family: monospace;
   color: #000;
   position: absolute;
-  font-size: 1.5em;
-  margin-top: 180px;
+  white-space: unset;
+  font-size: 1.7rem;
+  margin-top: 5.5em;
   animation: fadeIn 2s;
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.fade-in-text2 {
+
+@media only screen and (max-width: 405px) {
+  .title .fade-in-text1 {
+         font-size: 1.3rem;
+         margin-top: 8.5rem;
+  }
+}
+
+.title .fade-in-text2 {
   font-family: monospace;
   color: #544131;
   position: absolute;
-  font-size: 1.5em;
-  margin-top: 275px;
+  white-space: unset;
+  font-size: 1.5rem;
+  margin-top: 11em;
   animation: fadeIn 3.5s;
 }
+
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .title .fade-in-text2 {
+         font-size: 1.3rem;
+  }
 }
 
 /* List Styling */
 ul {
   list-style-type: none;
-  padding: 15px;
+  padding: 0.5em;
+  margin: 0;
 }
 
 /* Link Styling */
 
-a.see-more-link {
-color: #C96842;
-font-weight: bold;
-transition: 0.2s ease-in;
-text-decoration: none;
-display: flex;
-margin-bottom: 200px;
+.title a.see-more-link {
+  color: #c96842;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+  text-decoration: none;
+  display: flex;
+  margin-bottom: 200px;
+  align-items: center;
 }
 
-a.see-more-link:hover {
-transform: translateX(5%);
-color: #788B55;
+.title a.see-more-link:hover {
+  transform: translateX(5%);
+  color: #788b55;
+}
+
+@media only screen and (max-width: 405px) {
+  .title a.see-more-link {
+         font-size: 1.3rem;
+  }
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 600,
-  'GRAD' 200,
-  'opsz' 48;
- margin-left: 10px;
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 200, "opsz" 48;
+  margin-left: 10px;
 }
